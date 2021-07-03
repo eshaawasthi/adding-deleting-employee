@@ -1,0 +1,12 @@
+<div class="card" [ngStyle]="{backgroundColor: getColor(employeeItem.type)}">
+    <span class="cross" (click)="onDeleteItem(employeeItem)">x</span>
+    <div class="card-body">
+        <h5 class="card-title" *ngIf="employeeItem.employeeName">NAME: {{employeeItem.employeeName}}</h5>
+        <p class="card-text" *ngIf="employeeItem.employeeDesc; else noEmployeeDesc">Description:
+            {{employeeItem.employeeDesc}}
+        </p>
+        <ng-template #noEmployeeDesc>Description: No Description available </ng-template>
+        <p [ngClass]="{'color-green': employeeItem.type==='Employee'}" class="color-blue">Type: {{employeeItem.type}}
+        </p>
+    </div>
+</div>

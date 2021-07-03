@@ -1,0 +1,28 @@
+.main-cockpit-wrapper .margin-bottom-20{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.main-cockpit-wrapper .title-heading{
+    font-size: 1.5em;
+    margin: 20px 0px;
+    font-weight: 700;
+    text-transform: capitalize;   
+}
+.main-cockpit-wrapper {
+    justify-content: center;
+    display: flex;
+}
+.main-cockpit-wrapper .btn-primary{
+    color: #fff;
+    background-color: #2d2c2a;
+    border-color: #0a0a0a;
+    padding: 7px 20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    margin-right: 30px;
+}
+.btn-primary:hover {
+    color: #191818!important;
+    background-color: #ffffff!important;
+    border-color: #161617!important;
+}

@@ -1,0 +1,21 @@
+.cross {
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+}
+.card {
+    border: 2px solid #80808042;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #252323;
+}
+.color-green{
+    color: green!important;
+    font-weight: 600;
+}
+.color-blue{
+    color: indigo;
+    font-weight: 600;
+}
