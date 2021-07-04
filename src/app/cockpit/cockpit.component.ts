@@ -8,7 +8,6 @@ import { Component, OnInit, ViewChild, ElementRef, Output, EventEmitter } from '
 export class CockpitComponent implements OnInit {
   employeeName: string = "";
   employeeDesc: string = "";
-  isDataNotAvailable: boolean = true;
 
   @Output() employeeAdded = new EventEmitter<{ employeeName: string, employeeDesc: string }>();
   @Output() bluePrintAdded = new EventEmitter<{ employeeName: string, employeeDesc: string }>();
@@ -35,10 +34,6 @@ export class CockpitComponent implements OnInit {
   }
   onResetAll() {
     this.employeeDeleted.emit();
-    this.isDataNotAvailable = true;
-  }
-  employeeNameAdded() {
-    this.isDataNotAvailable = false;
   }
   clearAll() {
     this.employeeName = "";

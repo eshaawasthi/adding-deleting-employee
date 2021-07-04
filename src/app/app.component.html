@@ -1,10 +1,9 @@
 <div class="container">
   <app-cockpit (employeeAdded)="onAddEmployee($event)" (bluePrintAdded)="onAddBluePrint($event)"
-    (employeeDeleted)="onResetAll($event)">
+    (employeeDeleted)="onResetAll()">
   </app-cockpit>
   <div class="row main-employee-list">
     <div class="col-lg-6 col-md-6 col-sm-6">
-
       <app-employee-list [employeeList]="employeeList" [employeeItem]="employeeItem"
         *ngFor="let employeeItem of employeeList;">
       </app-employee-list>
